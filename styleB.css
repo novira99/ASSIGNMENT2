@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-wrap: nowrap;             /* boxes never wrap */
+  gap: 10px;                     /* 10px between boxes */
+  font-family: Tahoma, sans-serif;
+  font-size: 40px;
+}
+
+.box {
+  box-sizing: border-box;
+  flex: none;
+  width: 100px;
+  height: 150px;
+  padding: 10px;                 /* space between letter and box edge */
+  background-color: #eeeff2;
+  border-left: 10px dotted #D0D0FF;
+  color: black;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: yellow;
+  color: goldenrod;
+}
+
+.box.last {
+  position: fixed;               /* stays in bottom right corner on resize */
+  bottom: 0;
+  right: 0;
+}
